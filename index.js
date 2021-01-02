@@ -13,7 +13,7 @@ const searcher = new YTSearcher({
     key: "AIzaSyB_hsEQxxkpf3F6jbaDiOzhsWWm4e6tKlw",
     revealed: true
 });
-client.login("Nzc4OTUyOTQzNTMzNDI0NjUw.X7ZedQ.jfmCv1gzGU8-UBViOhkdc2haDTU")
+client.login(process.env.TOKEN)
 
 ///////////////////COMANDO READY///////////////////
 
