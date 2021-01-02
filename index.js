@@ -136,11 +136,19 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`Kono Yo no Hate...0112`)
     }
+    if (command === "3009200702251411101000"){
+        message.react('❌')
+        message.channel.send(`Muy ingenioso, pero quizás es lo opuesto...`)
+    }
     if (command === "3009200702251411102200"){
         message.react('❌')
         message.channel.send(`Muy ingenioso, pero quizás es lo opuesto...`)
     }
     if (command === "3009200702251411101400"){
+        message.react('☑️')
+        message.channel.send(`La princesa de la Luna, en su segunda versión, los dos primeros números sobre la segunda persona...`)
+    }
+    if (command === "3009200702251411100200"){
         message.react('☑️')
         message.channel.send(`La princesa de la Luna, en su segunda versión, los dos primeros números sobre la segunda persona...`)
     }
