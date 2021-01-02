@@ -192,7 +192,22 @@ client.on("message", async (message) => {
         message.react('❓')
         message.channel.send(`¿Se acabó?`)
     }
-
+    if (command === "secret"){
+        message.react('❌')
+        message.channel.send(`Este no es el comando secreto...`)
+    }
+    if (command === "secreto"){
+        message.react('❌')
+        message.channel.send(`Este no es el comando secreto, secreto, secreto...`)
+    }
+    if (command === "secreto, secreto, secreto"){
+        message.react('❌')
+        message.channel.send(`¿En serio?`)
+    }
+    if (command === "secreto3"){
+        message.react('☑️')
+        message.channel.send(`6, clock. 7, foto. 9, mala fortuna`)
+    }
 
 })
 
