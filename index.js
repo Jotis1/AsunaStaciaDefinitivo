@@ -210,7 +210,7 @@ client.on("message", async (message) => {
     }
     if (command === "aqua"){
         message.react('☑️')
-        message.channel.send(`Gran bot, pero no tiene lo que estás buscaando`)
+        message.channel.send(`Gran bot, pero no tiene lo que estás buscando`)
     }
     if (command === "asuna"){
         message.react('☑️')
