@@ -216,6 +216,10 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`A+A+A= A3`)
     }
+    if (command === "as"){
+        message.react('☑️')
+        message.channel.send(`secreto = A`)
+    }
 
 })
 
