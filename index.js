@@ -208,6 +208,14 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`6, clock. 7, foto. 9, mala fortuna`)
     }
+    if (command === "aqua"){
+        message.react('☑️')
+        message.channel.send(`Gran bot, pero no tiene lo que estás buscaando`)
+    }
+    if (command === "asuna"){
+        message.react('☑️')
+        message.channel.send(`A+A+A= A3`)
+    }
 
 })
 
