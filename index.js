@@ -150,7 +150,7 @@ client.on("message", async (message) => {
     }
     if (command === "3009200702251411100200"){
         message.react('☑️')
-        message.channel.send(`La princesa de la Luna, en su segunda versión, los dos primeros números sobre la segunda persona...`)
+        message.channel.send(`La princesa de la Luna, en su segunda versión, los dos primeros números sobre la segunda persona de la imagen...`)
     }
     if (command === "300920070225141110140021"){
         message.react('☑️')
