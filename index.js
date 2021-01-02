@@ -156,13 +156,29 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`El mundo se acabará pronto. El mundo se acabará pronto. El mundo se acabará pronto. `)
     }
+    if (command === "300920070225141110020021"){
+        message.react('☑️')
+        message.channel.send(`El mundo se acabará pronto. El mundo se acabará pronto. El mundo se acabará pronto. `)
+    }  
     if (command === "30092007022514111014002117"){
         message.react('☑️')
         message.channel.send(`**SHINE**`)
     }
-    if (command === "30092007022514111014002117O4"){
+    if (command === "30092007022514111002002117"){
+        message.react('☑️')
+        message.channel.send(`**SHINE**`)
+    }
+    if (command === "3009200702251411101400211704"){
         message.react('☑️')
         message.channel.send(`¿Amas la vida? Yo amo Los Alpes suizos... las mejores medidas de todas.`)
+    }
+    if (command === "3009200702251411100200211704"){
+        message.react('☑️')
+        message.channel.send(`¿Amas la vida? Yo amo Los Alpes suizos... las mejores medidas de todas.`)
+    }
+    if (command === "30092007022514111014002117O4926188"){
+        message.react('☑️')
+        message.channel.send(`La primera de muchas muertes, sujetó su mano. Poco importaban ya los segundos...`)
     }
     if (command === "30092007022514111014002117O4926188"){
         message.react('☑️')
@@ -172,7 +188,15 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`¿El final de SAO?`)
     }
+    if (command === "30092007022514111002002117O492618820"){
+        message.react('☑️')
+        message.channel.send(`¿El final de SAO?`)
+    }
     if (command === "30092007022514111014002117O49261882075"){
+        message.react('☑️')
+        message.channel.send(`Tiburón`)
+    }
+    if (command === "30092007022514111002002117O49261882075"){
         message.react('☑️')
         message.channel.send(`Tiburón`)
     }
@@ -180,7 +204,15 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`Trío. Las poses más raras, las apuestas más arriesgadas.`)
     }
+    if (command === "30092007022514111002002117O4926188207512092020"){
+        message.react('☑️')
+        message.channel.send(`Trío. Las poses más raras, las apuestas más arriesgadas.`)
+    }
     if (command === "30092007022514111014002117O4926188207512092020101010"){
+        message.react('☑️')
+        message.channel.send(`Vivo en la realidad pero cuando quiero vivo en otro mundo.`)
+    }
+    if (command === "30092007022514111002002117O4926188207512092020101010"){
         message.react('☑️')
         message.channel.send(`Vivo en la realidad pero cuando quiero vivo en otro mundo.`)
     }
@@ -188,7 +220,15 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`¿El final es el comienzo, y el comienzo es el final, encontrará a la de sus recuerdos? ¿Cuántos son?`)
     }
+    if (command === "30092007022514111002002117O49261882075120920201010108"){
+        message.react('☑️')
+        message.channel.send(`¿El final es el comienzo, y el comienzo es el final, encontrará a la de sus recuerdos? ¿Cuántos son?`)
+    }
     if (command === "30092007022514111014002117O492618820751209202010101086"){
+        message.react('❓')
+        message.channel.send(`¿Se acabó?`)
+    }
+    if (command === "30092007022514111002002117O492618820751209202010101086"){
         message.react('❓')
         message.channel.send(`¿Se acabó?`)
     }
