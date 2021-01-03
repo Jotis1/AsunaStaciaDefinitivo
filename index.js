@@ -226,11 +226,67 @@ client.on("message", async (message) => {
     }
     if (command === "300920070225141110140021170492618820751209202010101086"){
         message.react('❓')
-        message.channel.send(`¿Se acabó?`)
+        message.channel.send(`Monster. Monster. Monster. Monster... Una maldición.`)
     }
     if (command === "300920070225141110020021170492618820751209202010101086"){
         message.react('❓')
-        message.channel.send(`¿Se acabó?`)
+        message.channel.send(`Monster. Monster. Monster. Monster... Una maldición.`)
+    }
+    if (command === "30092007022514111002002117049261882075120920201010108613"){
+        message.react('☑️')
+        message.channel.send(`V y yo amamos ver animes.`)
+    }
+    if (command === "30092007022514111014002117049261882075120920201010108613"){
+        message.react('☑️')
+        message.channel.send(`V y yo amamos ver animes.`)
+    }
+    if (command === "30092007022514111014002117049261882075120920201010108613342"){
+        message.react('☑️')
+        message.channel.send(`Las mentiras están prohibidas. Los triángulos no...`)
+    }
+    if (command === "30092007022514111002002117049261882075120920201010108613342"){
+        message.react('☑️')
+        message.channel.send(`Las mentiras están prohibidas. Los triángulos no...`)
+    }
+    if (command === "3009200702251411100200211704926188207512092020101010861334297"){
+        message.react('☑️')
+        message.channel.send(`Bienvenido a la que pueda ser la pregunta más difícil del juego. Haz lo que quieras con esto: 35°42′27″N 139°39′50″E`)
+    }
+    if (command === "3009200702251411101400211704926188207512092020101010861334297"){
+        message.react('☑️')
+        message.channel.send(`Bienvenido a la que pueda ser la pregunta más difícil del juego. Haz lo que quieras con esto: 35°42′27″N 139°39′50″E`)
+    }
+    if (command === "300920070225141110140021170492618820751209202010101086133429750"){
+        message.react('❌')
+        message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
+    }
+    if (command === "300920070225141110020021170492618820751209202010101086133429750"){
+        message.react('❌')
+        message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
+    }
+    if (command === "30092007022514111014002117049261882075120920201010108613342970"){
+        message.react('❌')
+        message.channel.send(`Cero no es nada. Hay veces que hay que dar un paso hacía atrás para dar dos hacía delante.`)
+    }
+    if (command === "30092007022514111002002117049261882075120920201010108613342970"){
+        message.react('❌')
+        message.channel.send(`Cero no es nada. Hay veces que hay que dar un paso hacía atrás para dar dos hacía delante.`)
+    }
+    if (command === "3009200702251411100200211704926188207512092020101010861334297014"){
+        message.react('☑️')
+        message.channel.send(`@everyone **Lo logró**.`)
+    }
+    if (command === "3009200702251411101400211704926188207512092020101010861334297014"){
+        message.react('☑️')
+        message.channel.send(`@everyone **Lo logró**.`)
+    }
+    if (command === "300920070225141110140021170492618820751209202010101086133429742"){
+        message.react('❌')
+        message.channel.send(`Un paso atrás, pero en la pregunta.`)
+    }
+    if (command === "300920070225141110020021170492618820751209202010101086133429742"){
+        message.react('❌')
+        message.channel.send(`Un paso atrás, pero en la pregunta.`)
     }
     if (command === "secret"){
         message.react('❌')
