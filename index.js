@@ -234,29 +234,21 @@ client.on("message", async (message) => {
     }
     if (command === "30092007022514111002002117049261882075120920201010108613"){
         message.react('☑️')
-        message.channel.send(`V y yo amamos ver animes.`)
+        message.channel.send(`Las mentiras están prohibidas. Los **triángulos** no...`)
     }
     if (command === "30092007022514111014002117049261882075120920201010108613"){
         message.react('☑️')
-        message.channel.send(`V y yo amamos ver animes.`)
+        message.channel.send(`Las mentiras están prohibidas. Los **triángulos** no...`)
     }
-    if (command === "30092007022514111014002117049261882075120920201010108613342"){
-        message.react('☑️')
-        message.channel.send(`Las mentiras están prohibidas. Los triángulos no...`)
-    }
-    if (command === "30092007022514111002002117049261882075120920201010108613342"){
-        message.react('☑️')
-        message.channel.send(`Las mentiras están prohibidas. Los triángulos no...`)
-    }
-    if (command === "3009200702251411100200211704926188207512092020101010861334297"){
+    if (command === "3009200702251411100200211704926188207512092020101010861397"){
         message.react('☑️')
         message.channel.send(`Bienvenido a la que pueda ser la pregunta más difícil del juego. Haz lo que quieras con esto: 35°42′27″N 139°39′50″E`)
     }
-    if (command === "3009200702251411101400211704926188207512092020101010861334297"){
+    if (command === "3009200702251411101400211704926188207512092020101010861397"){
         message.react('☑️')
         message.channel.send(`Bienvenido a la que pueda ser la pregunta más difícil del juego. Haz lo que quieras con esto: 35°42′27″N 139°39′50″E`)
     }
-    if (command === "300920070225141110140021170492618820751209202010101086133429750"){
+    if (command === "300920070225141110140021170492618820751209202010101086139750"){
         message.react('❌')
         message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
     }
@@ -264,29 +256,29 @@ client.on("message", async (message) => {
         message.react('❌')
         message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
     }
-    if (command === "30092007022514111014002117049261882075120920201010108613342970"){
+    if (command === "30092007022514111014002117049261882075120920201010108613970"){
         message.react('❌')
-        message.channel.send(`Cero no es nada. Hay veces que hay que dar un paso hacía atrás para dar dos hacía delante.`)
+        message.channel.send(`Cero no es nada. Hay veces que hay que dar dos pasos hacía atrás para dar cuatro hacía delante.`)
     }
-    if (command === "30092007022514111002002117049261882075120920201010108613342970"){
+    if (command === "30092007022514111002002117049261882075120920201010108613970"){
         message.react('❌')
-        message.channel.send(`Cero no es nada. Hay veces que hay que dar un paso hacía atrás para dar dos hacía delante.`)
+        message.channel.send(`Cero no es nada. Hay veces que hay que dar dos pasos hacía atrás para dar cuatro hacía delante.`)
     }
-    if (command === "3009200702251411100200211704926188207512092020101010861334297014"){
+    if (command === "300920070225141110020021170492618820751209202010101086139714"){
         message.react('☑️')
-        message.channel.send(`@everyone **Lo logró**.`)
+        message.channel.send(`@ジョティス#0002 **Lo logró**. Pero te queda el último paso, escribe esto: aq!omedetou`)
     }
-    if (command === "3009200702251411101400211704926188207512092020101010861334297014"){
+    if (command === "300920070225141110140021170492618820751209202010101086139714"){
         message.react('☑️')
-        message.channel.send(`@everyone **Lo logró**.`)
+        message.channel.send(`@ジョティス#0002 **Lo logró**.  Pero te queda el último paso, escribe esto: aq!omedetou`)
     }
-    if (command === "300920070225141110140021170492618820751209202010101086133429742"){
+    if (command === "300920070225141110140021170492618820751209202010101086139713"){
         message.react('❌')
-        message.channel.send(`Un paso atrás, pero en la pregunta.`)
+        message.channel.send(`Esta respuesta está muy cerca de la verdadera... Yo volvería a revisar detenidamente el estudio de Ufotable...`)
     }
-    if (command === "300920070225141110020021170492618820751209202010101086133429742"){
+    if (command === "300920070225141110020021170492618820751209202010101086139713"){
         message.react('❌')
-        message.channel.send(`Un paso atrás, pero en la pregunta.`)
+        message.channel.send(`Esta respuesta está muy cerca de la verdadera... Yo volvería a revisar detenidamente el estudio de Ufotable...`)
     }
     if (command === "secret"){
         message.react('❌')
@@ -316,6 +308,7 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`secreto = A`)
     }
+    
 
 })
 
