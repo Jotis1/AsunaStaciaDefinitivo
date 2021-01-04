@@ -200,83 +200,83 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`Tiburón`)
     }
-    if (command === "3009200702251411101400211704926188207512092020"){
+    if (command === "3009200702251411101400211704926188207513092020"){
         message.react('☑️')
         message.channel.send(`Trío. Las poses más raras, las apuestas más arriesgadas.`)
     }
-    if (command === "3009200702251411100200211704926188207512092020"){
+    if (command === "3009200702251411100200211704926188207513092020"){
         message.react('☑️')
         message.channel.send(`Trío. Las poses más raras, las apuestas más arriesgadas.`)
     }
-    if (command === "3009200702251411101400211704926188207512092020101010"){
+    if (command === "3009200702251411101400211704926188207513092020101010"){
         message.react('☑️')
         message.channel.send(`Vivo en la realidad pero cuando quiero vivo en otro mundo.`)
     }
-    if (command === "3009200702251411100200211704926188207512092020101010"){
+    if (command === "3009200702251411100200211704926188207513092020101010"){
         message.react('☑️')
         message.channel.send(`Vivo en la realidad pero cuando quiero vivo en otro mundo.`)
     }
-    if (command === "30092007022514111014002117049261882075120920201010108"){
+    if (command === "30092007022514111014002117049261882075130920201010108"){
         message.react('☑️')
         message.channel.send(`¿El final es el comienzo, y el comienzo es el final, encontrará a la de sus recuerdos? ¿Cuántos son?`)
     }
-    if (command === "30092007022514111002002117049261882075120920201010108"){
+    if (command === "30092007022514111002002117049261882075130920201010108"){
         message.react('☑️')
         message.channel.send(`¿El final es el comienzo, y el comienzo es el final, encontrará a la de sus recuerdos? ¿Cuántos son?`)
     }
-    if (command === "300920070225141110140021170492618820751209202010101086"){
+    if (command === "300920070225141110140021170492618820751309202010101086"){
         message.react('❓')
         message.channel.send(`Monster. Monster. Monster. Monster... Una maldición.`)
     }
-    if (command === "300920070225141110020021170492618820751209202010101086"){
+    if (command === "300920070225141110020021170492618820751309202010101086"){
         message.react('❓')
         message.channel.send(`Monster. Monster. Monster. Monster... Una maldición.`)
     }
-    if (command === "30092007022514111002002117049261882075120920201010108613"){
+    if (command === "30092007022514111002002117049261882075130920201010108613"){
         message.react('☑️')
         message.channel.send(`Las mentiras están prohibidas. Los **triángulos** no...`)
     }
-    if (command === "30092007022514111014002117049261882075120920201010108613"){
+    if (command === "30092007022514111014002117049261882075130920201010108613"){
         message.react('☑️')
         message.channel.send(`Las mentiras están prohibidas. Los **triángulos** no...`)
     }
-    if (command === "3009200702251411100200211704926188207512092020101010861397"){
+    if (command === "3009200702251411100200211704926188207513092020101010861397"){
         message.react('☑️')
         message.channel.send(`Bienvenido a la que pueda ser la pregunta más difícil del juego. Haz lo que quieras con esto: 35°42′27″N 139°39′50″E`)
     }
-    if (command === "3009200702251411101400211704926188207512092020101010861397"){
+    if (command === "3009200702251411101400211704926188207513092020101010861397"){
         message.react('☑️')
         message.channel.send(`Bienvenido a la que pueda ser la pregunta más difícil del juego. Haz lo que quieras con esto: 35°42′27″N 139°39′50″E`)
     }
-    if (command === "300920070225141110140021170492618820751209202010101086139750"){
+    if (command === "300920070225141110140021170492618820751309202010101086139750"){
         message.react('❌')
         message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
     }
-    if (command === "300920070225141110020021170492618820751209202010101086133429750"){
+    if (command === "300920070225141110020021170492618820751309202010101086133429750"){
         message.react('❌')
         message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
     }
-    if (command === "30092007022514111014002117049261882075120920201010108613970"){
+    if (command === "30092007022514111014002117049261882075130920201010108613970"){
         message.react('❌')
         message.channel.send(`Cero no es nada. Hay veces que hay que dar dos pasos hacía atrás para dar cuatro hacía delante.`)
     }
-    if (command === "30092007022514111002002117049261882075120920201010108613970"){
+    if (command === "30092007022514111002002117049261882075130920201010108613970"){
         message.react('❌')
         message.channel.send(`Cero no es nada. Hay veces que hay que dar dos pasos hacía atrás para dar cuatro hacía delante.`)
     }
-    if (command === "300920070225141110020021170492618820751209202010101086139714"){
+    if (command === "300920070225141110020021170492618820751309202010101086139714"){
         message.react('☑️')
         message.channel.send(`¡¡¡¡¡¡¡¡¡**Lo logró**!!!!!!!!!. Pero te queda el último paso, escribe esto: aq!omedetou`)
     }
-    if (command === "300920070225141110140021170492618820751209202010101086139714"){
+    if (command === "300920070225141110140021170492618820751309202010101086139714"){
         message.react('☑️')
         message.channel.send(`¡¡¡¡¡¡¡¡¡**Lo logró**!!!!!!!!!.  Pero te queda el último paso, escribe esto: aq!omedetou`)
     }
-    if (command === "300920070225141110140021170492618820751209202010101086139713"){
+    if (command === "300920070225141110140021170492618820751309202010101086139713"){
         message.react('❌')
         message.channel.send(`Esta respuesta está muy cerca de la verdadera... Yo volvería a revisar detenidamente el estudio de Ufotable...`)
     }
-    if (command === "300920070225141110020021170492618820751209202010101086139713"){
+    if (command === "300920070225141110020021170492618820751309202010101086139713"){
         message.react('❌')
         message.channel.send(`Esta respuesta está muy cerca de la verdadera... Yo volvería a revisar detenidamente el estudio de Ufotable...`)
     }
