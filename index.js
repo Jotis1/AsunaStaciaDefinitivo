@@ -266,11 +266,11 @@ client.on("message", async (message) => {
     }
     if (command === "300920070225141110020021170492618820751209202010101086139714"){
         message.react('☑️')
-        message.channel.send(`@ジョティス#0002 **Lo logró**. Pero te queda el último paso, escribe esto: aq!omedetou`)
+        message.channel.send(`¡¡¡¡¡¡¡¡¡**Lo logró**!!!!!!!!!. Pero te queda el último paso, escribe esto: aq!omedetou`)
     }
     if (command === "300920070225141110140021170492618820751209202010101086139714"){
         message.react('☑️')
-        message.channel.send(`@ジョティス#0002 **Lo logró**.  Pero te queda el último paso, escribe esto: aq!omedetou`)
+        message.channel.send(`¡¡¡¡¡¡¡¡¡**Lo logró**!!!!!!!!!.  Pero te queda el último paso, escribe esto: aq!omedetou`)
     }
     if (command === "300920070225141110140021170492618820751209202010101086139713"){
         message.react('❌')
