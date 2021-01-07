@@ -805,10 +805,7 @@ client.on('message', message =>{
     
         message.channel.send(embed);
     }
-    const { Client, MessageEmbed } = require('discord.js')
-    const { Menu } = require('discord.js-menu')
-    const client = new Client()
-
+    
     if (msg.startsWith(prefix + '8881120588811205')){
    
         let helpMenu = new Menu(message.channel, message.author.id, [
