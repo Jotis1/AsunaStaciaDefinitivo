@@ -65,6 +65,16 @@ client.on("message", async (message) => {
         message.delete().catch() 
         message.channel.send(texto)
     }
+    if (command === "clear"){
+        let cantidad = args[0]
+
+        if (!cantidad) return message.channel.send("Ingresa una cantidad. (Menor a 100 mensajes)")
+        if (isNaN) return message.channel.send("Pon un número.")
+        if (cantidad <= 0) return;
+        cantidad = parseInt(cantidad)
+        message.channel.bulkDelete(cantidad + 1)
+        message.channel.send(cantidad + "mensajes cantidad.").then(msg => msg.delete({timeout: 5000}))
+    }
 
     if (command === "meme"){
         const meme = ["meme"]
