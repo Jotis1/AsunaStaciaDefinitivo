@@ -9,6 +9,8 @@ const cheerio = require('cheerio')
 const ytdl = require("ytdl-core")
 const { YTSearcher } = require("ytsearcher");
 const { Player, Queue } = require("discord-player");
+const mongoose = require('mongoose')
+mongoose.connect('mongodb+srv://Jotis:71438576rR@cluster0.bqh2z.mongodb.net/Data', {useNewUrlParser: true, useUnifiedTopology: true})
 const searcher = new YTSearcher({
     key: "AIzaSyB_hsEQxxkpf3F6jbaDiOzhsWWm4e6tKlw",
     revealed: true
@@ -1104,6 +1106,35 @@ client.on('message', message =>{
 
 })
 
-/////////////////////////////MÚSICA///////////////////////////////
+/////////////////////////////XP///////////////////////////////
+const Levels = require('discord-xp')
+Levels.setURL("mongodb+srv://Jotis:71438576rR@cluster0.bqh2z.mongodb.net/Data")
 
+client.on("message", async (message) => {
+    if(!message.guild) return;
+    if(message.author.bot) return;
 
+    const args = message.content.slice(prefix.length).trim().split(/ +/g)
+    const command = args.shift().toLowerCase();
+
+    const randomXp = Math.floor(math.random() * 9) +1;
+    const hasLeveledUp = await Levels.appendXp(message.author.id, message.guild.id, randomXp);
+    if (hasLeveledUp){
+        const user = await Levels.fetch(message.author.id, message.guild.id);
+        message.channel.send(`¡Has subido de nivel! Ahora eres nivel ${user.level}.`)
+    }
+    if(command === "rank"){
+        const user = await Levels.fetch(message.author.id, message.guild.id);
+        message.channel.send(`Eres nivel **${user.level}**.`)
+    }
+    if(command === "leaderboard"|| command === "lb"){
+        const rawLeaderboard = await Levels.fetchLeaderboard(message.guild.id, 5);
+        if (rawLeaderboard.lenght <1) return reply("Nadie tiene niveles aún.");
+
+        const leaderboard = Levels.computeLeaderboard(bot, rawLeaderboard);
+        const lb = leaderboard.map(e => `${e.position}. ${e.username}#${e.discriminator}\nLevel: ${e.level}\nXP: ${e.xp.toLocaleString()}`);  
+        
+        message.channel.send(`${lb.join("\n\n")}}`)
+    }
+
+})
