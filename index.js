@@ -68,6 +68,7 @@ client.on("message", async (message) => {
     if (command === "clear"){
         let cantidad = args[0]
 
+        if (!message.member.hasPermission("ADMINISTRATOR")) return;
         if (!cantidad) return message.channel.send("Ingresa una cantidad. (Menor a 100 mensajes)")
         if (isNaN) return message.channel.send("Pon un número.")
         if (cantidad <= 0) return;
