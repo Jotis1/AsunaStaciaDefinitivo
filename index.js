@@ -1037,6 +1037,7 @@ client.on('message', message =>{
                 reactions: {
                     '⬅️': 'Kill',
                     '⏹️': 'delete', 
+                    '➡️': '0'
                 }
                 
             },
@@ -1048,7 +1049,7 @@ client.on('message', message =>{
                     description: 'Se refiere a Chuunibyou. Síndrome de Octavo Grado: **8**',
                 }),
                 reactions: {
-                    '⬅️': 'Kiss',
+                    '⬅️': 'Avatar',
                     '⏹️': 'delete', 
                     '➡️': '1'
                 }
