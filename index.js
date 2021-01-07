@@ -74,7 +74,7 @@ client.on("message", async (message) => {
         if (cantidad <= 0) return;
         cantidad = parseInt(cantidad)
         message.channel.bulkDelete(cantidad + 1)
-        message.channel.send(cantidad + "mensajes cantidad.").then(msg => msg.delete({timeout: 5000}))
+        message.channel.send('Se han borrado ' + cantidad + ' mensajes.').then(msg => msg.delete({timeout: 5000}))
     }
 
     if (command === "meme"){
