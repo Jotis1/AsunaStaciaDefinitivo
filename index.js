@@ -1126,8 +1126,8 @@ client.on("message", async message => {
         const user = await levels.fetch(message.author.id, message.guild.id);
         const embed = new Discord.MessageEmbed()
             .setColor("00ff2e")
-            .setTitle("Nivel")
-            .setDescription(`¡Enhorabuena! Ahora eres nivel ${user.level}!`)
+            .setTitle("LO LOGRÓ")
+            .setDescription(`¡Enhorabuena @${message.author.username}#${message.author.discriminator}! Ahora eres nivel ${user.level}!`)
         message.channel.send(embed);
     }
     
@@ -1143,7 +1143,7 @@ client.on("message", async message => {
     }
     
     //Leaderboard
-    if(command === "leaderboard" || command === "lb") {
+    if(command === "top" || command === "lb") {
         const rawLeaderboard = await levels.fetchLeaderboard(message.guild.id, 5);
         if (rawLeaderboard.length < 1) return reply("Nadie está en la tabla aún");
 
