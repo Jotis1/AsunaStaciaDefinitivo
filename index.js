@@ -263,7 +263,7 @@ client.on("message", async (message) => {
         message.react('❌')
         message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
     }
-    if (command === "300920070225141110020021170492618820751309202010101086133429750"){
+    if (command === "300920070225141110020021170492618820751309202010101086133429751"){
         message.react('❌')
         message.channel.send(`No he pedido eso... Bueno, realmente no he pedido nada.`)
     }
