@@ -70,7 +70,7 @@ client.on("message", async (message) => {
 
         if (!message.member.hasPermission("ADMINISTRATOR")) return;
         if (!cantidad) return message.channel.send("Ingresa una cantidad. (Menor a 100 mensajes)")
-        if (isNaN) return message.channel.send("Pon un número.")
+        if (isNaN(cantidad)) return message.channel.send("Pon un número.")
         if (cantidad <= 0) return;
         cantidad = parseInt(cantidad)
         message.channel.bulkDelete(cantidad + 1)
