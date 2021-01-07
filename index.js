@@ -1107,34 +1107,53 @@ client.on('message', message =>{
 })
 
 /////////////////////////////XP///////////////////////////////
-const Levels = require('discord-xp')
-Levels.setURL("mongodb+srv://Jotis:71438576rR@cluster0.bqh2z.mongodb.net/Data")
 
-client.on("message", async (message) => {
-    if(!message.guild) return;
-    if(message.author.bot) return;
 
-    const args = message.content.slice(prefix.length).trim().split(/ +/g)
+
+const levels = require('discord-xp')
+levels.setURL("mongodb+srv://Jotis:71438576rR@cluster0.bqh2z.mongodb.net/Data")
+
+client.on("message", async message => {
+    if (!message.guild) return;
+    if (message.author.bot) return;
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
-    const randomXp = Math.floor(math.random() * 9) +1;
-    const hasLeveledUp = await Levels.appendXp(message.author.id, message.guild.id, randomXp);
-    if (hasLeveledUp){
-        const user = await Levels.fetch(message.author.id, message.guild.id);
-        message.channel.send(`¡Has subido de nivel! Ahora eres nivel ${user.level}.`)
+    const randomXp = Math.floor(Math.random() * 9) + 1; //Random amont of XP until the number you want + 1
+    const hasLeveledUp = await levels.appendXp(message.author.id, message.guild.id, randomXp);
+    if (hasLeveledUp) {
+        const user = await levels.fetch(message.author.id, message.guild.id);
+        const embed = new Discord.MessageEmbed()
+            .setColor("00ff2e")
+            .setTitle("Nivel")
+            .setDescription(`¡Enhorabuena! Ahora eres nivel ${user.level}!`)
+        message.channel.send(embed);
     }
-    if(command === "rank"){
-        const user = await Levels.fetch(message.author.id, message.guild.id);
-        message.channel.send(`Eres nivel **${user.level}**.`)
-    }
-    if(command === "leaderboard"|| command === "lb"){
-        const rawLeaderboard = await Levels.fetchLeaderboard(message.guild.id, 5);
-        if (rawLeaderboard.lenght <1) return reply("Nadie tiene niveles aún.");
+    
+    //Rank
+    if(command === "rank") {
+        const user = await levels.fetch(message.author.id, message.guild.id);
+        const embed = new Discord.MessageEmbed()
+        .setColor("00ff2e")
+        .setTitle("Nivel")
+        .setDescription(`Eres nivel ${user.level}!`)
+        message.channel.send(embed);
 
-        const leaderboard = Levels.computeLeaderboard(bot, rawLeaderboard);
-        const lb = leaderboard.map(e => `${e.position}. ${e.username}#${e.discriminator}\nLevel: ${e.level}\nXP: ${e.xp.toLocaleString()}`);  
-        
-        message.channel.send(`${lb.join("\n\n")}}`)
     }
+    
+    //Leaderboard
+    if(command === "leaderboard" || command === "lb") {
+        const rawLeaderboard = await levels.fetchLeaderboard(message.guild.id, 5);
+        if (rawLeaderboard.length < 1) return reply("Nadie está en la tabla aún");
 
+        const leaderboard = await levels.computeLeaderboard(client, rawLeaderboard); 
+        const lb = leaderboard.map(e => `${e.position}. ${e.username}#${e.discriminator}\nLevel: ${e.level}\nXP: ${e.xp.toLocaleString()}`);
+        const embed = new Discord.MessageEmbed()
+        .setColor("00ff2e")
+        .setTitle("Top del Servidor")
+        .setDescription(`${lb.join("\n\n")}`)
+        message.channel.send(embed);
+
+    }
 })
