@@ -335,33 +335,39 @@ client.on("message", async (message) => {
     
         let status;
         switch (user.presence.status) {
-          case "online":
-            status = ":yellow_circle: Conectado.";
-    
+          case "idle":
+            status = ":yellow_circle: Ausente"
             break;
           case "offline":
-            status = ":red_circle: Desconectado.";
+            status = ":white_circle: Offline"
             break;
+          case "online":
+            status = ":green_circle: Conectado"
+            break;
+          case "dnd":
+            status = ":red_circle: No molestar"
+            break;
+        
         }
     
         const embed = new Discord.MessageEmbed()
-          .setTitle(`${user.user.username} stats`)
-          .setColor(`#0x00ae86`)
+          .setTitle(`${user.user.username}`)
+          .setColor(`RANDOM`)
           .setImage("https://images-ext-2.discordapp.net/external/NdhnG_GmVgCdqR5iaRUeWIwRVzORsxq6mIw_0RfG_nc/https/media.discordapp.net/attachments/706850303189975141/707264945661935689/kkkk.gif")
           .setThumbnail(user.user.displayAvatarURL({ dynamic: true }))
           .addFields(
             {
-              name: "Name: ",
+              name: "Apodo: ",
               value: user.user.username,
               inline: true
             },
             {
-              name: "Discriminator: ",
+              name: "Discriminador: ",
               value: `${user.user.discriminator}`,
               inline: true
             },
             {
-              name: ":id: ID: ",
+              name: ":id:",
               value: user.user.id
             },
             {
@@ -370,17 +376,17 @@ client.on("message", async (message) => {
               inline: true
             },
             {
-              name: "fecha de creación:",
+              name: "Fecha de creación:",
               value: user.user.createdAt.toLocaleDateString("en-us"),
               inline: true
             },
             {
-              name: "fecha de unión:",
+              name: "Fecha de unión:",
               value: user.joinedAt.toLocaleDateString("en-us"),
               inline: true
             },
             {
-              name: "Avatar link: ",
+              name: "Avatar: ",
               value: `[Click Here](${user.user.displayAvatarURL()})`
             },
             {
