@@ -1243,7 +1243,7 @@ client.on('message', message =>{
     
         message.channel.send(embed);
     }
-    if (msg.startsWith(prefix + 'banana')) {
+    if (msg.startsWith(prefix + 'bn')) {
         
         let medida = [
             "1",
