@@ -101,6 +101,15 @@ client.on("message", async (message) => {
     if (command === "yt"){ 
         message.channel.send(`:crossed_flags:  El canal de VictoRuch es este! Échale un vistazo  :crossed_flags: : https://www.youtube.com/channel/UC5weJ8jqHA3qyc1mI3vC8-w `) 
     }
+    if (command === "erina"){ 
+        message.react('👩‍🍳')
+        const erina = new Discord.MessageEmbed()
+        .setTitle('Cocinemos juntos Chelin')
+        .setColor('ff0000')
+        .setImage('https://cdn.discordapp.com/avatars/318120108662849538/f407e71073ed85c7283c823aec16f922.webp?size=4096')
+        message.channel.send(erina) 
+    }
+
 
     if (command === "twitch"){ 
         message.channel.send(`:crossed_flags:  ¿El Twitch de VictoRuch? ¡¡ Aquí lo tienes!!  :crossed_flags: : https://www.twitch.tv/victoruchh`) 
@@ -447,8 +456,15 @@ client.on('message', message =>{
     if (msg.startsWith(prefix + 'kiss')){
         let miembro = message.mentions.members.first();
         if (message.author.bot) return;
+
         if (!miembro) return message.reply("Menciona a quien quieras besar...");
         let img = message.mentions.users.first();
+
+        if(message.author.id == miembro.id){
+            message.react('😐')
+            return message.reply('¿Te ibas a besar a tí mismo?')
+        
+        }
     
         let gif = [
           "https://i.pinimg.com/originals/6e/4f/fe/6e4ffe54a38656cda96ba3eec67c84b4.gif",
