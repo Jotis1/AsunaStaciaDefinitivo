@@ -379,74 +379,7 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`secreto = A`)
     }
-    if (command === "user") {
-        let user = message.mentions.members.first() || message.member;
-    
-        let status;
-        switch (user.presence.status) {
-          case "idle":
-                status = ":yellow_circle: Ausente"
-                break;
-          case "offline":
-                status = ":white_circle: Offline"
-                break;
-          case "online":
-                status = ":green_circle: Conectado"
-                break;
-          case "dnd":
-                status = ":red_circle: No molestar"
-                break;
-        
-        }
-    
-        const embed = new Discord.MessageEmbed()
-          .setTitle(`${user.user.username}`)
-          .setColor(`RANDOM`)
-          .setImage("https://images-ext-2.discordapp.net/external/NdhnG_GmVgCdqR5iaRUeWIwRVzORsxq6mIw_0RfG_nc/https/media.discordapp.net/attachments/706850303189975141/707264945661935689/kkkk.gif")
-          .setThumbnail(user.user.displayAvatarURL({ dynamic: true }))
-          .addFields(
-            {
-              name: "Apodo: ",
-              value: user.user.username,
-              inline: true
-            },
-            {
-              name: "Discriminador: ",
-              value: `${user.user.discriminator}`,
-              inline: true
-            },
-            {
-              name: ":id:",
-              value: user.user.id
-            },
-            {
-              name: "Estado",
-              value: status,
-              inline: true
-            },
-            {
-              name: "Fecha de creación:",
-              value: user.user.createdAt.toLocaleDateString("en-us"),
-              inline: true
-            },
-            {
-              name: "Fecha de unión:",
-              value: user.joinedAt.toLocaleDateString("en-us"),
-              inline: true
-            },
-            {
-              name: "Avatar: ",
-              value: `[Click Here](${user.user.displayAvatarURL()})`
-            },
-            {
-              name: "Roles Del Usuario",
-              value: user.roles.cache.map(role => role.toString()).join(" ,"),
-              inline: true
-            }
-          );
-    
-        await message.channel.send(embed);
-      }
+
     
 
 })
