@@ -330,6 +330,68 @@ client.on("message", async (message) => {
         message.react('☑️')
         message.channel.send(`secreto = A`)
     }
+    if (command === "user") {
+        let user = message.mentions.members.first() || message.member;
+    
+        let status;
+        switch (user.presence.status) {
+          case "online":
+            status = ":yellow_circle: Conectado.";
+    
+            break;
+          case "offline":
+            status = ":red_circle: Desconectado.";
+            break;
+        }
+    
+        const embed = new Discord.MessageEmbed()
+          .setTitle(`${user.user.username} stats`)
+          .setColor(`#0x00ae86`)
+          .setImage("https://images-ext-2.discordapp.net/external/NdhnG_GmVgCdqR5iaRUeWIwRVzORsxq6mIw_0RfG_nc/https/media.discordapp.net/attachments/706850303189975141/707264945661935689/kkkk.gif")
+          .setThumbnail(user.user.displayAvatarURL({ dynamic: true }))
+          .addFields(
+            {
+              name: "Name: ",
+              value: user.user.username,
+              inline: true
+            },
+            {
+              name: "Discriminator: ",
+              value: `${user.user.discriminator}`,
+              inline: true
+            },
+            {
+              name: ":id: ID: ",
+              value: user.user.id
+            },
+            {
+              name: "Estado",
+              value: status,
+              inline: true
+            },
+            {
+              name: "fecha de creación:",
+              value: user.user.createdAt.toLocaleDateString("en-us"),
+              inline: true
+            },
+            {
+              name: "fecha de unión:",
+              value: user.joinedAt.toLocaleDateString("en-us"),
+              inline: true
+            },
+            {
+              name: "Avatar link: ",
+              value: `[Click Here](${user.user.displayAvatarURL()})`
+            },
+            {
+              name: "Roles Del Usuario",
+              value: user.roles.cache.map(role => role.toString()).join(" ,"),
+              inline: true
+            }
+          );
+    
+        await message.channel.send(embed);
+      }
     
 
 })
