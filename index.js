@@ -118,7 +118,7 @@ client.on("message", async (message) => {
         :nine: •No poner links
         :keycap_ten: •Lo mas importante, pasartelo bien y disfrutar del servidor!`) 
     }
-    if (command === "782"){
+    if (command === "kanna"){
         message.channel.send(`Se me viene a la cabeza... ¿slow?`)
     }
     if (command === "vr"){
@@ -404,31 +404,31 @@ client.on('message', message =>{
         }
         let number = Math.floor(Math.random() * 9);
         if (number == 0){
-            return message.channel.send('Sí, no me cabe la menor duda')
+            return message.channel.send('Sí, no me cabe la menor duda.')
         }
         if (number == 1){
-            return message.channel.send('No creo')
+            return message.channel.send('No creo.')
         }
         if (number == 2){
             return message.channel.send('No se como decirte esto... ehmm. NO.')
         }
         if (number == 3){
-            return message.channel.send('Depende de tú ya sabes que')
+            return message.channel.send('Depende de tú ya sabes que.')
         }
         if (number == 4){
-            return message.channel.send('Seguramente')
+            return message.channel.send('Seguramente.')
         }
         if (number == 5){
-            return message.channel.send('Vuelve a decir eso y le digo a Kirito que te banee')
+            return message.channel.send('Vuelve a decir eso y le digo a Kirito que te banee.')
         }
         if (number == 6){
-            return message.channel.send('Pregúntalo más tarde')
+            return message.channel.send('Pregúntalo más tarde.')
         }
         if (number == 7){
-            return message.channel.send('No lo tienes nada a tu favor')
+            return message.channel.send('No lo tienes nada a tu favor.')
         }
         if (number == 8){
-            return message.channel.send('Lo tienes a tu favor')
+            return message.channel.send('Lo tienes a tu favor.')
 
         }
     }
@@ -779,7 +779,16 @@ client.on('message', message =>{
         let miembro = message.mentions.members.first();
         if (message.author.bot) return;
 
+        const owo = new Discord.MessageEmbed()
+        .setTitle(`Intento de suicidio por parte de ${message.author.username}`)
+        .setColor("RANDOM")
+        .setImage('https://i.imgur.com/zg0MOMI.gif')
+        .setDescription('No lo hagas, esa no es la salida...')
+        
         if (!miembro) return message.reply("Pero espera, ¡¿A quién quieres matar?!");
+        
+        if(message.author.id == miembro.id) return message.reply(owo)
+        
         let img = message.mentions.users.first();
     
         let gif = [
@@ -1104,6 +1113,213 @@ client.on('message', message =>{
    
         helpMenu.start()
     }
+    if (msg.startsWith(prefix + 'sip')){
+
+        let ocha = [
+            "https://cdn.nekotina.com/images/zLpIge9B.gif",
+            "https://cdn.nekotina.com/images/0EZj7-D6.gif",
+            "https://cdn.nekotina.com/images/REYo622k.gif",
+            "https://cdn.nekotina.com/images/4bNMbFpx.gif",
+            "https://cdn.nekotina.com/images/mR0IBqmEN.gif",
+            "https://cdn.nekotina.com/images/rRNqKGBj.gif",
+            "https://cdn.nekotina.com/images/q0lit7dNW.gif",
+            "https://tenor.com/view/kirito-gif-10830229",
+            "https://cdn.nekotina.com/images/G82qdfSk.gif",
+            "https://cdn.nekotina.com/images/Z5mnlvB0.gif",
+            "https://cdn.nekotina.com/images/AZ6QbCs3.gif",
+            "https://cdn.nekotina.com/images/ynwUIDPe.gif",
+            "https://imgur.com/4nsF3N8",
+            "https://cdn.nekotina.com/images/uxtGkrVKv.gif",
+        ];
+
+        const embed = new Discord.MessageEmbed()
+        .setTitle(`${message.author.username} está tomando ocha.`)
+        .setColor("RANDOM")
+        .setImage(ocha[Math.floor(Math.random() * ocha.length)])
+        
+
+        return message.channel.send(embed) 
+    }
+    if (msg.startsWith(prefix + 'sleep')){
+
+        let mimir = [
+            "https://images-ext-2.discordapp.net/external/A8Av7EE4Ms0SSEoztzOQuq_ilWZOv3coBC9xM3lgcYc/https/imgur.com/eZMfVUq.gif.gif",
+            "https://cdn.discordapp.com/attachments/744704938424270953/797184780550668369/s1c.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797185119412420608/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797185232931520532/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797185419645026324/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797185527442833428/s1.gif",
+            "https://discord.com/channels/@me/744704938424270953/797183497412411393",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797185805294632970/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797185946994343936/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797186118566674452/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797186272863059968/s1.gif",
+            "https://cdn.discordapp.com/attachments/735980466582323353/797186413443022873/s1.gif",
+        
+        ];
+
+        const embed = new Discord.MessageEmbed()
+        .setTitle(`${message.author.username} está durmiendo profundamente.`)
+        .setColor("RANDOM")
+        .setImage(mimir[Math.floor(Math.random() * mimir.length)])
+        
+
+        return message.channel.send(embed) 
+    }
+    if (msg.startsWith(prefix + 'slap')){
+        let miembro = message.mentions.members.first();
+        if (message.author.bot) return;
+
+        const awa = new Discord.MessageEmbed()
+        .setTitle(`¡No te pegues! ${message.author.username}`)
+        .setColor("RANDOM")
+        .setImage('https://i.imgur.com/E8C6yNI.gif')
+        .setDescription('No te irás a pegar a ti mismo...¿no?')
+
+       
+    
+        if (!miembro) return message.reply("Pero espera, ¡¿A quién quieres pegar?!");
+        let img = message.mentions.users.first();
+        
+        if(message.author.id == miembro.id) return message.reply(awa)
+        let slap = [
+          "https://cdn.discordapp.com/attachments/735980466582323353/797188400447881266/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797188573823893504/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797188801792442408/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797188983120723978/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797189162549641226/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797189339121451038/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797189492284325938/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797189617375379546/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797189876059340851/s1.gif",
+         
+        ];
+    
+        const embed = new Discord.MessageEmbed()
+    
+          .setTitle(`${message.author.username}, le ha dado una bofetada a ${img.username}.`)
+          .setColor("RANDOM")
+          .setImage(slap[Math.floor(Math.random() * slap.length)]);
+    
+        message.channel.send(embed);
+    }
+    if (msg.startsWith(prefix + 'pat')){
+        let miembro = message.mentions.members.first();
+        if (message.author.bot) return;
+
+        const iwi = new Discord.MessageEmbed()
+        .setTitle(`${message.author.username} se ha acariciado a si mismo.`)
+        .setColor("RANDOM")
+        .setImage('https://pa1.narvii.com/6345/1afca296924552f201983742f98d310e2054839b_hq.gif')
+        .setDescription('¿Tan solo te sientes?')
+
+       
+    
+        if (!miembro) return message.reply("Pero espera, ¡¿A quién quieres darle amor?!");
+        let img = message.mentions.users.first();
+        
+        if(message.author.id == miembro.id) return message.reply(iwi)
+        let pat = [
+          "https://cdn.discordapp.com/attachments/735980466582323353/797195143563706398/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797195402520428566/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797195656392605696/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797195861758836756/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797196029652500541/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797196169150201876/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797196495454732288/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797196627664175165/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797197093516345404/s1.gif",
+          "https://cdn.discordapp.com/attachments/735980466582323353/797197371548368896/s1.gif",
+          "https://cdn.discordapp.com/attachments/746179353829703691/797197376343375872/pat_1.gif",
+          "https://cdn.discordapp.com/attachments/746179353829703691/797197557452243025/pat_2.gif",
+         
+        ];
+    
+        const embed = new Discord.MessageEmbed()
+    
+          .setTitle(`${message.author.username}, le ha dado amor a ${img.username}.`)
+          .setColor("RANDOM")
+          .setImage(pat[Math.floor(Math.random() * pat.length)]);
+    
+        message.channel.send(embed);
+    }
+    if (msg.startsWith(prefix + 'banana')) {
+        
+        let medida = [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "100",
+
+
+        ]
+        const tula = new Discord.MessageEmbed()
+        .setTitle(`Tu banana mide ${medida[Math.floor(Math.random() * medida.length)]} centímetros`)
+        .setColor("RANDOM")
+        .setImage("https://cdn.discordapp.com/attachments/746179353829703691/797205740284542976/dibujos-animados-bananas-bailando_53734-29.png")
+
+
+
+        message.channel.send(tula)
+
+
+    }  
+
 
 })
 
