@@ -1145,7 +1145,7 @@ client.on("message", async message => {
     
     //Leaderboard
     if(command === "top" || command === "lb") {
-        const rawLeaderboard = await levels.fetchLeaderboard(message.guild.id, 5);
+        const rawLeaderboard = await levels.fetchLeaderboard(message.guild.id, 10);
         if (rawLeaderboard.length < 1) return reply("Nadie está en la tabla aún");
 
         const leaderboard = await levels.computeLeaderboard(client, rawLeaderboard); 
