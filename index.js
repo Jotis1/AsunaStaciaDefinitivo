@@ -1440,3 +1440,17 @@ client.on("message", async message => {
 
     }
 })
+
+/////////////////////////BIENVENIDA/////////////////////////
+
+client.on('guildMemberAdd', (member) => {
+    let channelID = "784089457594073139";
+    if(member.guild.id != "774990356206059550") return;
+  
+    let embed = new Discord.MessageEmbed()
+    .setTitle(`**¡Nuevo miembro!**`)
+    .setDescription(`¡**${member.user.tag}** se ha unido al servidor! 🎌 Ohayou Gozaimasu 🎌 `)
+    .setColor("ff0053")
+    .setTimestamp()
+    client.channels.cache.get(channelID).send(embed)
+  })
