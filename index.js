@@ -387,6 +387,7 @@ client.on('message', message =>{
     let msg = message.content.toLowerCase();
     let args = message.content.substring(prefix.length).split(' ');
     let ki = 'ki!'
+    let ne = 'ne!'
     if (msg.startsWith(prefix + 'coin')) {
 
         let number = Math.floor(Math.random() * 2);
@@ -1467,7 +1468,7 @@ client.on('message', message =>{
 
         message.channel.send(kurumi)
     }
-    if (msg.startsWith(prefix + 'tanjirou')) {
+    if (msg.startsWith(ne + 'tanjirou')) {
         const tanjirou = new Discord.MessageEmbed()
         .setTitle('Salvemos y protegamos al mundo de todos los demonios.')
         .setImage('https://cdn.discordapp.com/attachments/735980466582323353/800133082324926515/tanjirou.gif')
