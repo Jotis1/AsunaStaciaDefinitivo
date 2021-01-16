@@ -1492,6 +1492,14 @@ client.on('message', message =>{
 
         message.channel.send(kirito)
     }
+    if (msg.startsWith(prefix + 'kaori')) {
+        const kaori = new Discord.MessageEmbed()
+        .setTitle('Siempre te estaré esperando, Nico.')
+        .setImage('https://cdn.discordapp.com/attachments/800116937908682793/800139903090294814/kaori.gif')
+        .setColor('ffe500')
+
+        message.channel.send(kaori)
+    }
 })
 
 /////////////////////////////XP///////////////////////////////
