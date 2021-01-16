@@ -1461,25 +1461,25 @@ client.on('message', message =>{
     }
     if (msg.startsWith(prefix + 'kurumi')) {
         const kurumi = new Discord.MessageEmbed()
-        setTitle('Ara Ara, Vesk-San'),
-        setImage('https://cdn.discordapp.com/attachments/800116937908682793/800118054247071744/b60519f441412bedbe5fb16999e30335.gif'),
-        setColor('ff0000')
+        .setTitle('Ara Ara, Vesk-San')
+        .setImage('https://cdn.discordapp.com/attachments/800116937908682793/800118054247071744/b60519f441412bedbe5fb16999e30335.gif')
+        .setColor('ff0000')
 
         message.channel.send(kurumi)
     }
     if (msg.startsWith(prefix + 'tanjirou')) {
         const tanjirou = new Discord.MessageEmbed()
-        setTitle('Salvemos y protegamos al mundo de todos los demonios.'),
-        setImage('https://cdn.discordapp.com/attachments/735980466582323353/800133082324926515/tanjirou.gif'),
-        setColor('00aae4')
+        .setTitle('Salvemos y protegamos al mundo de todos los demonios.')
+        .setImage('https://cdn.discordapp.com/attachments/735980466582323353/800133082324926515/tanjirou.gif')
+        .setColor('00aae4')
 
         message.channel.send(tanjirou)
     }
     if (msg.startsWith(prefix + 'kanna')) {
         const kanna = new Discord.MessageEmbed()
-        setTitle('Lo que veo me lo como :yum: (#Slow)'),
-        setImage('https://cdn.discordapp.com/attachments/800116937908682793/800124963049701416/Kanna-Kamui.gif'),
-        setColor('fc67d2')
+        .setTitle('Lo que veo me lo como :yum: (#Slow)')
+        .setImage('https://cdn.discordapp.com/attachments/800116937908682793/800124963049701416/Kanna-Kamui.gif')
+        .setColor('fc67d2')
 
         message.channel.send(kanna)
     }
