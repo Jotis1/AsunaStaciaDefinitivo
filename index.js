@@ -1501,7 +1501,7 @@ client.on('message', message =>{
 
         message.channel.send(kaori)
     }
-    if (msg.startsWith(prefix + 'AiOhto')) {
+    if (msg.startsWith(prefix + 'aiohto')) {
         const aiohto = new Discord.MessageEmbed()
         .setTitle('Mira como salto compañero!!!')
         .setImage('https://cdn.discordapp.com/attachments/800116937908682793/800148136307851274/tumblr_ebbb914a33bd31ecffeca2c10147a54d_fdab1039_540.gif')
