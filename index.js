@@ -1585,7 +1585,7 @@ const JOTIS = new Discord.MessageEmbed()
 .setColor('RANDOM')
 
 client.on('message', async message => {
-    if (message.content.startsWith(`${prefix}jotis`)){
+    if (message.content.startsWith(`${prefix}yotsuba`)){
         const msg = await message.channel.send(JOTIS)
         msg.react('🎀')
         message.delete()
