@@ -1430,14 +1430,14 @@ client.on('message', message =>{
         message.delete().catch()
   
         const iwi = new Discord.MessageEmbed()
-        .setTitle(`¡${message.author.username}! Se está reviviendo a sí mismo.`)
+        .setTitle(`¡${message.author.username}! No puedes hacer eso`)
         .setColor("RANDOM")
-        .setImage('https://cdn.discordapp.com/attachments/751963091948011550/799658371141730335/unknown.png')
-        .setDescription('¿Eso era siquiera posible?')
+        .setImage('https://cdn.discordapp.com/attachments/735980466267619487/801139432237039656/aqua_llorando.gif')
+        .setDescription('Ni siquiera es posible...')
   
        
     
-        if (!miembro) return message.reply("Pero espera, ¡¿A quién quieres matar?!");
+        if (!miembro) return message.reply("Pero espera, ¡¿A quién quieres revivir?!");
         let img = message.mentions.users.first();
         
         if(message.author.id == miembro.id) return message.reply(iwi)
@@ -1460,6 +1460,113 @@ client.on('message', message =>{
     
         message.channel.send(embed);
     }
+    if (msg.startsWith(prefix + 'fly')){
+
+        let vuelo = [
+            "https://cdn.discordapp.com/attachments/399448944889036801/750704023094689852/4c3600ea-7cf0-4622-bca5-a890f5c7301f.gif",
+            "https://cdn.discordapp.com/attachments/541402053998673950/707462218303668258/3.gif",
+            "https://cdn.discordapp.com/attachments/399448944889036801/750703063739793438/ae85acb5-f604-4222-ae54-d030bf1d79a8.gif",
+            "https://cdn.discordapp.com/attachments/541402053998673950/707462261974892544/2.gif",
+            "https://imgur.com/XAXexvL.gif",
+            "https://imgur.com/hEFe2bt.gif",
+            "https://cdn.discordapp.com/attachments/399448944889036801/735831181412532264/81155f3a-bcb1-420d-a494-8d59383af51f.gif",
+            "https://cdn.discordapp.com/attachments/399448944889036801/718175793942888478/91e172d6d2dc7f9eeb9ccb6248c424b4.gif",
+            "https://cdn.discordapp.com/attachments/399448944889036801/763403392970129438/ezgif.com-gif-maker.gif",
+            "https://cdn.discordapp.com/attachments/541402053998673950/707462396062597160/12.gif",
+            "https://cdn.discordapp.com/attachments/541402053998673950/707462283277762590/7.gif",
+            "https://cdn.discordapp.com/attachments/399448944889036801/769038538124951562/dfd7cdaa78940f3dbdd80cdd294c4881.gif",
+        
+        ];
+        message.delete().catch()
+  
+        const embed = new Discord.MessageEmbed()
+        .setTitle(`${message.author.username}... ¡ESTÁ VOLANDO!.`)
+        .setColor("RANDOM")
+        .setImage(vuelo[Math.floor(Math.random() * vuelo.length)])
+        
+  
+        return message.channel.send(embed) 
+    }
+    if (msg.startsWith(prefix + 'clap')){
+        let miembro = message.mentions.members.first();
+        if (message.author.bot) return;
+        message.delete().catch()
+  
+        const clap1 = new Discord.MessageEmbed()
+        .setTitle(`${message.author.username} se iba a aplaudir a sí mismo...`)
+        .setColor("RANDOM")
+        .setImage('https://cdn.discordapp.com/attachments/735980466267619487/801140598681108580/rikka_mofletes.gif')
+        .setDescription('Yo creo que es mejor que te aplaudan otros ¿no?')
+  
+       
+    
+        if (!miembro) return message.reply("primero me tendrás que decir quién es el afortunado al que le vas a aplaudir.");
+        let img = message.mentions.users.first();
+        
+        if(message.author.id == miembro.id) return message.reply(clap1)
+        let clap = [
+          "https://cdn.discordapp.com/attachments/735980466267619487/801142104490639430/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801142336733708308/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801142504979955722/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801142769913298954/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801143372186124288/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801143744295731200/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801144083778371624/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801144329997385738/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801144453820579940/a1.gif",
+          "https://cdn.discordapp.com/attachments/735980466267619487/801144568950292530/a1.gif",
+        ];
+    
+        const embed = new Discord.MessageEmbed()
+    
+          .setTitle(`¡${message.author.username} está aplaudiendo a  ${img.username}!`)
+          .setColor("RANDOM")
+          .setImage(clap[Math.floor(Math.random() * clap.length)])
+          .setDescription('Se lo merece.');
+    
+        message.channel.send(embed);
+    }
+    if (msg.startsWith(prefix + 'spank')){
+        let miembro = message.mentions.members.first();
+        if (message.author.bot) return;
+        message.delete().catch()
+  
+        const spank = new Discord.MessageEmbed()
+        .setTitle(`${message.author.username}... mejor no hagas eso.`)
+        .setColor("RANDOM")
+        .setImage('https://cdn.discordapp.com/attachments/735980466267619487/801145452019449896/a1.gif')
+        .setDescription('En serio no lo hagas.')
+  
+       
+    
+        if (!miembro) return message.reply("serías tan amable de mencionar a alguien, no pienso hacerlo yo sola.");
+        let img = message.mentions.users.first();
+        
+        if(message.author.id == miembro.id) return message.reply(spank)
+        let cachete = [
+          "https://cdn.nekotina.com/images/zEUE5Ot_.gif",
+          "https://cdn.nekotina.com/images/Aynh_Ri4.gif",
+          "https://cdn.nekotina.com/images/M8HHs8WB.gif",
+          "https://cdn.nekotina.com/images/oOrNFU-N.gif",
+          "https://cdn.nekotina.com/images/VI0P4nD4.gif",
+          "https://cdn.nekotina.com/images/CXMkuKKY.gif",
+          "https://cdn.nekotina.com/images/gOaYlAqT.gif",
+          "https://cdn.nekotina.com/images/3GmXaB3gj.gif",
+          "https://cdn.nekotina.com/images/fNGk23pB.gif",
+          "https://cdn.nekotina.com/images/euV14EKi.gif",
+        ];
+    
+        const embed = new Discord.MessageEmbed()
+    
+          .setTitle(`¡${message.author.username} le está dando unos cachetes a ${img.username}!`)
+          .setColor("RANDOM")
+          .setImage(cachete[Math.floor(Math.random() * cachete.length)])
+          .setDescription('Por portarte mal...');
+    
+        message.channel.send(embed);
+      }
+    ////////////////PERSONALES////////////////
+        
     if (msg.startsWith(prefix + 'kurumi')) {
         const kurumi = new Discord.MessageEmbed()
         .setTitle('Ara Ara, Vesk-San')
