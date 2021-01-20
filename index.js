@@ -18,7 +18,7 @@ const searcher = new YTSearcher({
 const fs = require("fs");
 const { isFunction } = require("util")
 
-client.login("Nzc4OTUyOTQzNTMzNDI0NjUw.X7ZedQ.zbtoohRLD4yLybyKe27R501_JZQ")
+client.login(process.env.TOKEN)
 
 ///////////////////COMANDO READY///////////////////
 const prefix = "as!"
