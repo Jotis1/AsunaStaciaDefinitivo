@@ -282,6 +282,22 @@ module.exports = {
                             value: "Youtube de VictoRuch.",
                             inline: false
                         },
+                        {
+                            name: 'love', 
+                            value: "Declarate a alguien.",
+                            inline: false
+                        },
+                        {
+                            name: 'heal', 
+                            value: "Cura a alguien.",
+                            inline: false
+                        },
+                        {
+                            name: 'jump', 
+                            value: "Simplemente, salta.",
+                            inline: false
+                        },
+                    
                     ]
                     
                 
@@ -290,8 +306,43 @@ module.exports = {
                 reactions: {
                     '⬅️': 'previous',
                     '⏹️': 'delete',
+                    '➡️': 'next'
                     
                 }
+
+
+            },
+            {
+                name: 'Página 6',
+              
+                content: new MessageEmbed({
+                    title: 'AYUDA',
+                    description: 'Página 6',
+                    color: 'RANDOM',
+                    fields: [
+                        {
+                            name: 'happy', 
+                            value: "Demuestra tu felicidad.",
+                            inline: false
+                        },
+                        {
+                            name: 'blush', 
+                            value: "M-Me da vergüenza...",
+                            inline: false
+                        },
+                        
+                    
+                    ]
+                    
+                
+                }),
+                reactions: {
+                    '⬅️': 'previous',
+                    '⏹️': 'delete',
+                    
+                    
+                }
+
             },
             
          
