@@ -2,10 +2,7 @@ module.exports = {
     nombre: "rps",
     alias: ["ppt"],
     run: (client, message, args) => {
-        if (!args[1]){
-            return message.channel.send('Porfavor, añade tu elección')
-        }
-
+        
         let choices = ['piedra','papel','tijera']
         if (choices.includes(args[1].toLowerCase())) {
             let number = Math.floor(Math.random() * 3)
